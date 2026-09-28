@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hack-submission"
+version = "0.1.0"
+description = "Archive indexing and timed visibility campaign execution for Hackathon 2025 submission Muse."
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8.0,<9.0"]
+
+[project.scripts]
+hack-submission = "hack_submission.cli:run"
+
+[tool.setuptools.packages.find]
+include = ["hack_submission*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
