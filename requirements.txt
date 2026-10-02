@@ -1,3 +1,3 @@
 # The runtime uses only the Python 3.12 standard library.
 # pytest is required to execute the included test suite.
-pytest>=8.0,<9.0
+pytest>=9.1.1
